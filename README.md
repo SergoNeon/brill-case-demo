@@ -1,3 +1,7 @@
 # BRILL CASE Demo
 
-Public interactive demo for BRILL CASE. Production source remains private.
+Public visual demo for BRILL CASE legal practice management.
+
+- Source of the commercial product remains private.
+- Demo data is fictional.
+- Production client data is never connected to this repository.
