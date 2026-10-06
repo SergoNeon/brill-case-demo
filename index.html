@@ -3,20 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="BRILL CASE — secure legal practice management for modern law firms.">
-  <title>BRILL CASE</title>
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="BRILL CASE — операционная система юридической фирмы.">
+  <title>BRILL CASE — Legal Practice Operating System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <script src="./demo-shim.js"></script>
-  <script src="./app.js" defer></script>
 </head>
 <body>
-  <div id="app">
-    <div class="boot">
-      <div class="brand-seal">BC</div>
-      <strong>BRILL CASE</strong>
-      <span>Legal Practice Platform</span>
-    </div>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="wordmark" href="./"><span class="mark">BC</span><span><strong>BRILL CASE</strong><small>Legal Practice OS</small></span></a>
+    <nav class="primary-nav"><a href="#platform">Платформа</a><a href="#security">Безопасность</a><a href="#pricing">Тарифы</a></nav>
+    <div class="header-actions"><span class="eyebrow">RU · HE · EN</span><a class="button" href="./crm-preview.html">Демо CRM</a><a class="button dark" href="./crm-preview.html">Открыть систему</a></div>
   </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div><span class="eyebrow">Legal Practice Operating System</span><h1>Юридическая практика, собранная в одну систему.</h1></div>
+        <div class="hero-note">
+          <p>Дела, документы, сроки, финансы и работа с клиентом — без переключения между разрозненными сервисами. BRILL CASE создаёт единое рабочее пространство юридической фирмы.</p>
+          <div class="hero-actions"><a class="button dark" href="./crm-preview.html">Посмотреть рабочее дело</a><a class="button" href="#pricing">Тарифы</a></div>
+          <div class="hero-proof"><span><i></i>14 дней бесплатно</span><span><i></i>Русский · עברית · English</span><span><i></i>Отдельная среда каждой фирмы</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-stage">
+    <div class="wrap">
+      <div class="stage-head"><div><span class="eyebrow">Живая демонстрация продукта</span><h2>Не презентация. Рабочий интерфейс.</h2></div><a href="./crm-preview.html">Открыть на весь экран →</a></div>
+      <div class="product-browser">
+        <div class="browser-bar"><i></i><i></i><i></i><span>BRILL CASE / Matters / 2026-179 / Overview</span></div>
+        <iframe src="./crm-preview.html" title="BRILL CASE CRM demo"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" id="platform">
+    <div class="wrap statement-grid">
+      <div><span class="eyebrow">Что внутри</span><h2>Одна система вокруг дела, а не вокруг списка функций.</h2></div>
+      <div class="statement-copy">
+        <div class="cap-row"><h3>Дела и рабочие процессы</h3><div><p>Карточка дела, участники, статусы, заметки, календарь, задачи и история работы. Вся команда видит один контекст.</p><div class="cap-meta">Matter workspace · Deadlines · Tasks</div></div></div>
+        <div class="cap-row"><h3>Документы и доказательства</h3><div><p>Версии, SHA-256, Evidence Vault, Legal Hold и chain of custody. Критические материалы невозможно тихо заменить или удалить.</p><div class="cap-meta">Evidence Vault · Legal Hold · Audit</div></div></div>
+        <div class="cap-row"><h3>Финансы и клиентский сервис</h3><div><p>Время, счета, оплаты, расходы, клиентский портал, e-sign и защищённые сообщения — внутри того же дела.</p><div class="cap-meta">Billing · Client Portal · E-Sign</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="security" id="security">
+    <div class="wrap security-grid">
+      <div><span class="eyebrow">Архитектура</span><h2>Юридические данные не должны смешиваться между фирмами.</h2><p>BRILL CASE разделяет коммерческий control plane и рабочие данные. Для каждой юридической фирмы предусмотрены собственная база данных, хранилище документов, runtime-секреты и резервные копии.</p></div>
+      <div class="ledger">
+        <div class="ledger-row"><div><strong>Отдельная PostgreSQL база</strong><span>Дела и клиенты одной фирмы не лежат в общих таблицах с другой.</span></div><b>Tenant DB</b></div>
+        <div class="ledger-row"><div><strong>Изолированное хранилище</strong><span>Документы и backup-наборы имеют отдельную границу доступа.</span></div><b>Isolated</b></div>
+        <div class="ledger-row"><div><strong>Неизменяемый аудит</strong><span>Критические действия, версии и доступ к Evidence Vault фиксируются.</span></div><b>Recorded</b></div>
+        <div class="ledger-row"><div><strong>Права на уровне дела</strong><span>Granular permissions, Ethical Wall, 2FA и контроль активных сессий.</span></div><b>Controlled</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="pricing-head"><div><span class="eyebrow">Коммерческая модель</span><h2>Понятная цена. Без «свяжитесь с нами» на каждом шаге.</h2></div><p>Первые тарифы рассчитаны так, чтобы небольшая фирма могла начать без enterprise-бюджета. Каждый тариф начинается с 14-дневного trial.</p></div>
+      <div class="plan-table">
+        <div class="plan-row head"><span>Тариф</span><span>Цена / месяц</span><span>Команда</span><span>Для кого</span><span></span></div>
+        <div class="plan-row"><div><h3>Solo</h3></div><div class="price"><strong>₪129</strong><span>/ month</span></div><div><strong>1</strong> user</div><p>Самостоятельная практика<br>10 GB storage</p><a class="button" href="./crm-preview.html">Посмотреть</a></div>
+        <div class="plan-row"><div><h3>Team</h3></div><div class="price"><strong>₪299</strong><span>/ month</span></div><div><strong>3</strong> users</div><p>Небольшая юридическая команда<br>50 GB storage</p><a class="button" href="./crm-preview.html">Посмотреть</a></div>
+        <div class="plan-row featured"><div><h3>Firm</h3><span class="plan-tag">Основной тариф</span></div><div class="price"><strong>₪649</strong><span>/ month</span></div><div><strong>10</strong> users</div><p>Полноценная юридическая фирма<br>200 GB storage</p><a class="button dark" href="./crm-preview.html">Посмотреть</a></div>
+        <div class="plan-row"><div><h3>Enterprise</h3></div><div class="price"><strong>₪1,290</strong><span>/ month</span></div><div><strong>25</strong> users</div><p>Крупная практика, API и white-label<br>1 TB storage</p><a class="button" href="./crm-preview.html">Посмотреть</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap closing-grid">
+      <div><span class="eyebrow">Следующий шаг</span><h2>Сначала посмотрите продукт. Потом решайте, нужен ли он вашей фирме.</h2></div>
+      <div class="closing-copy"><p>Демоверсия использует только вымышленные данные. Она не связана с production CRM и не содержит клиентских материалов.</p><div class="hero-actions"><a class="button dark" href="./crm-preview.html">Открыть CRM-демо</a><a class="button" href="#platform">Посмотреть платформу</a></div></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap footer-row"><strong>BRILL CASE</strong><small>Legal Practice Operating System · Public demo · No production client data</small></div></footer>
 </body>
 </html>

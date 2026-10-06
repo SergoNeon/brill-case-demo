@@ -3,88 +3,119 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#090909">
-  <title>BRILL CASE · CRM Demo</title>
+  <meta name="theme-color" content="#101010">
+  <title>BRILL CASE · Matter Workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./crm-preview.css">
 </head>
 <body>
-  <div class="notice">ДЕМО-РЕЖИМ · ДАННЫЕ ВЫМЫШЛЕННЫЕ · BRILL CASE</div>
-  <div class="app">
-    <aside class="sidebar">
-      <div class="brand"><span>BC</span><div><strong>BRILL CASE</strong><small>Legal Practice OS</small></div></div>
-      <nav>
-        <a class="active">⌂ <span>Командный центр</span></a>
-        <a>◎ <span>Клиенты и CRM</span></a>
-        <a>▣ <span>Дела и папки</span></a>
-        <a>◫ <span>Календарь и сроки</span></a>
-        <a>✓ <span>Задачи и процессы</span></a>
-        <a>▤ <span>Документы</span></a>
-        <a>◆ <span>Evidence Vault</span></a>
-        <a>₪ <span>Финансы</span></a>
-        <a>✦ <span>Клиентский портал</span></a>
-        <a>◉ <span>Команда и права</span></a>
-        <a>⚿ <span>Безопасность и аудит</span></a>
-      </nav>
-      <div class="sidefoot"><span class="dot"></span><div><strong>Система защищена</strong><small>2FA · DLP · Audit</small></div></div>
-    </aside>
-    <main>
-      <header class="topbar">
-        <div><small>BRILL LEGAL DEMO</small><h1>Командный центр</h1></div>
-        <div class="actions"><button>⌕ Поиск</button><button>RU</button><span class="avatar">DO</span></div>
-      </header>
-      <section class="content">
-        <div class="hero">
-          <div><small>ОПЕРАЦИОННАЯ КАРТИНА</small><h2>Добрый вечер, Demo Owner</h2><p>Все критические сроки, финансовые риски и новые действия по делам — на одном экране.</p></div>
-          <button class="gold">＋ Новое дело</button>
-        </div>
-        <div class="kpis">
-          <article><span>Активные дела</span><strong>42</strong><small>+3 за 30 дней</small></article>
-          <article><span>Сроки / 14 дней</span><strong>8</strong><small class="warn">2 требуют внимания</small></article>
-          <article><span>Открытые задачи</span><strong>17</strong><small>5 сегодня</small></article>
-          <article><span>К получению</span><strong>₪84,600</strong><small>6 счетов</small></article>
-          <article><span>Evidence Vault</span><strong>186</strong><small class="ok">Целостность 100%</small></article>
-        </div>
-        <div class="grid">
-          <section class="card">
-            <div class="cardhead"><div><small>ПРИОРИТЕТ</small><h3>Что требует внимания</h3></div><span>Сегодня</span></div>
-            <div class="alerts">
-              <div class="alert red"><b>Критический срок</b><strong>State v. Cohen · 2026-184</strong><span>Подача процессуального документа · завтра, 10:00</span><button>Открыть дело</button></div>
-              <div class="alert goldline"><b>Evidence Vault</b><strong>Commercial dispute · 2026-179</strong><span>Новая версия доказательства ожидает Legal Hold review</span><button>Проверить</button></div>
-              <div class="alert"><b>Клиентский запрос</b><strong>Levi Holdings Ltd.</strong><span>Получен подписанный engagement packet</span><button>Посмотреть</button></div>
-            </div>
-          </section>
-          <section class="card">
-            <div class="cardhead"><div><small>СЕГОДНЯ</small><h3>Расписание</h3></div><span>06.10.2026</span></div>
-            <div class="timeline">
-              <div><time>09:30</time><i></i><p><strong>Подготовка к слушанию</strong><span>District Court · Matter 2026-176</span></p></div>
-              <div><time>12:00</time><i></i><p><strong>Встреча с клиентом</strong><span>Levi Holdings Ltd. · Office</span></p></div>
-              <div><time>15:30</time><i></i><p><strong>Internal case review</strong><span>Commercial dispute · Team</span></p></div>
-              <div><time>18:00</time><i></i><p><strong>Deadline acknowledgement</strong><span>Employment matter · Hard deadline</span></p></div>
-            </div>
-          </section>
-        </div>
-        <div class="grid lower">
-          <section class="card">
-            <div class="cardhead"><div><small>ДЕЛА</small><h3>Последняя активность</h3></div><a>Все дела →</a></div>
-            <div class="matters">
-              <div><span class="case">2026-184</span><p><strong>State v. Cohen</strong><small>Litigation · High risk</small></p><em class="risk">HIGH</em><b>Завтра</b></div>
-              <div><span class="case">2026-179</span><p><strong>Levi Holdings · Commercial</strong><small>Corporate · Evidence Vault</small></p><em>MEDIUM</em><b>12 окт.</b></div>
-              <div><span class="case">2026-172</span><p><strong>Employment matter</strong><small>Labour · Client portal</small></p><em class="good">LOW</em><b>18 окт.</b></div>
-              <div><span class="case">2026-161</span><p><strong>Real estate acquisition</strong><small>Property · E-Sign</small></p><em class="good">LOW</em><b>23 окт.</b></div>
-            </div>
-          </section>
-          <section class="card vault">
-            <div class="cardhead"><div><small>ДОКАЗАТЕЛЬСТВА</small><h3>Evidence integrity</h3></div><span class="shield">✓</span></div>
-            <div class="vaultscore"><strong>100%</strong><span>SHA-256 verified</span></div>
-            <div class="vaultrow"><span>Legal Hold</span><b>12 активных</b></div>
-            <div class="vaultrow"><span>Chain of custody</span><b>186 записей</b></div>
-            <div class="vaultrow"><span>Последняя проверка</span><b>2 мин. назад</b></div>
-            <button class="outline">Открыть Evidence Vault</button>
-          </section>
-        </div>
-        <div class="demo-actions"><a href="./">← Вернуться на сайт BRILL CASE</a><span>Интерактивная визуальная демоверсия · без реальных клиентских данных</span></div>
+<div class="demo-ribbon">PUBLIC DEMO · FICTIONAL DATA</div>
+<div class="workspace">
+  <aside class="sidebar">
+    <a class="brand" href="./"><span class="brand-mark">BC</span><span><strong>BRILL CASE</strong><small>Legal Practice OS</small></span></a>
+    <div class="firm-switch"><small>FIRM</small><strong>BRILL Legal Demo</strong><span>Jerusalem · IL</span></div>
+    <nav>
+      <a href="#"><span>◫</span>Обзор</a>
+      <a class="active" href="#"><span>▣</span>Дела</a>
+      <a href="#"><span>◎</span>Клиенты</a>
+      <a href="#"><span>▤</span>Документы</a>
+      <a href="#"><span>◇</span>Календарь</a>
+      <a href="#"><span>₪</span>Финансы</a>
+      <a href="#"><span>◆</span>Evidence Vault</a>
+      <a href="#"><span>⚿</span>Аудит</a>
+    </nav>
+    <div class="sidebar-foot"><span class="online"></span><div><strong>Protected workspace</strong><small>2FA · DLP · Audit</small></div></div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="breadcrumbs">Дела <span>/</span> 2026-179</div>
+      <div class="top-actions"><button>Поиск</button><button>RU</button><div class="user">DO</div></div>
+    </header>
+
+    <section class="matter-head">
+      <div>
+        <div class="matter-meta">COMMERCIAL · MATTER 2026-179</div>
+        <h1>Levi Holdings Ltd. v. Northbridge Systems</h1>
+        <p>Commercial dispute · District Court · Active</p>
+      </div>
+      <div class="matter-actions"><button class="secondary">Экспорт</button><button class="primary">Добавить действие</button></div>
+    </section>
+
+    <nav class="tabs">
+      <a class="active">Обзор</a><a>Документы <span>38</span></a><a>Сроки <span>6</span></a><a>Финансы</a><a>Участники <span>5</span></a><a>Evidence</a><a>Активность</a>
+    </nav>
+
+    <div class="page-grid">
+      <section class="content-col">
+        <article class="next-action">
+          <div><small>NEXT CRITICAL ACTION</small><h2>Подготовить ответ на ходатайство</h2><p>Срок подачи: 7 октября 2026, 10:00 · Ответственный: Adv. Demo Owner</p></div>
+          <div class="deadline"><strong>14</strong><span>часов</span></div>
+        </article>
+
+        <section class="section-block">
+          <header><div><small>MATTER SUMMARY</small><h2>Состояние дела</h2></div><button>Редактировать</button></header>
+          <div class="summary-grid">
+            <div><span>Клиент</span><strong>Levi Holdings Ltd.</strong></div>
+            <div><span>Практика</span><strong>Commercial Litigation</strong></div>
+            <div><span>Суд</span><strong>Jerusalem District Court</strong></div>
+            <div><span>Ответственный</span><strong>Demo Owner</strong></div>
+            <div><span>Открыто</span><strong>18 августа 2026</strong></div>
+            <div><span>Риск</span><strong class="risk">High</strong></div>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <header><div><small>RECENT ACTIVITY</small><h2>Хронология</h2></div><a>Показать всё</a></header>
+          <div class="timeline">
+            <div><time>06.10 · 18:42</time><i></i><div><strong>Новая версия evidence_12.pdf</strong><p>SHA-256 проверен. Версия 4 помещена под Legal Hold.</p><small>Demo Owner · Evidence Vault</small></div></div>
+            <div><time>06.10 · 16:10</time><i></i><div><strong>Получено сообщение клиента</strong><p>Клиент подтвердил список участников для следующего слушания.</p><small>Client Portal</small></div></div>
+            <div><time>06.10 · 12:18</time><i></i><div><strong>Срок подтверждён</strong><p>Deadline acknowledgement выполнен ответственным адвокатом.</p><small>Hard deadline · Audit recorded</small></div></div>
+            <div><time>05.10 · 17:55</time><i></i><div><strong>Загружен судебный документ</strong><p>motion_response_draft.docx · Version 2</p><small>Documents</small></div></div>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <header><div><small>DOCUMENTS</small><h2>Последние документы</h2></div><a>Все 38</a></header>
+          <div class="documents">
+            <div><span class="file">PDF</span><p><strong>evidence_12.pdf</strong><small>Evidence Vault · v4 · 8.2 MB</small></p><em>LEGAL HOLD</em><time>18:42</time></div>
+            <div><span class="file docx">DOC</span><p><strong>motion_response_draft.docx</strong><small>Working document · v2 · 214 KB</small></p><em class="normal">WORKING</em><time>05.10</time></div>
+            <div><span class="file">PDF</span><p><strong>court_notice_2026-10-04.pdf</strong><small>Court filing · signed · 1.1 MB</small></p><em class="verified">VERIFIED</em><time>04.10</time></div>
+          </div>
+        </section>
       </section>
-    </main>
-  </div>
+
+      <aside class="right-col">
+        <section class="side-block">
+          <header><small>UPCOMING</small><h3>Сроки</h3></header>
+          <div class="deadline-list">
+            <div class="critical"><time>07 OCT</time><p><strong>Ответ на ходатайство</strong><span>10:00 · Hard deadline</span></p></div>
+            <div><time>12 OCT</time><p><strong>Внутренний review</strong><span>14:30 · Team</span></p></div>
+            <div><time>21 OCT</time><p><strong>Судебное слушание</strong><span>09:00 · Court</span></p></div>
+          </div>
+        </section>
+
+        <section class="side-block">
+          <header><small>PARTIES</small><h3>Участники</h3></header>
+          <div class="people">
+            <div><span>LH</span><p><strong>Levi Holdings Ltd.</strong><small>Client</small></p></div>
+            <div><span>NS</span><p><strong>Northbridge Systems</strong><small>Opposing party</small></p></div>
+            <div><span>DO</span><p><strong>Demo Owner</strong><small>Lead counsel</small></p></div>
+          </div>
+        </section>
+
+        <section class="side-block evidence">
+          <header><small>EVIDENCE STATUS</small><h3>Целостность</h3></header>
+          <div class="integrity"><strong>100%</strong><span>SHA-256 verified</span></div>
+          <dl><div><dt>Legal Hold</dt><dd>Active</dd></div><div><dt>Evidence items</dt><dd>12</dd></div><div><dt>Chain events</dt><dd>47</dd></div><div><dt>Last verification</dt><dd>2 min ago</dd></div></dl>
+          <button>Открыть Evidence Vault</button>
+        </section>
+      </aside>
+    </div>
+    <footer class="matter-footer"><a href="./">← Вернуться на сайт BRILL CASE</a><span>Демонстрационные данные · production не используется</span></footer>
+  </main>
+</div>
 </body>
 </html>
