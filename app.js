@@ -37,7 +37,7 @@ function matterPane(){
  '<div class="matter-foot"><span>'+m.stage+'</span><span>'+m.deadline+'</span></div></button>').join('')+'</div>'+
  '</aside>';
 }
-function top(){
+function globalBar(){
  return '<div class="globalbar"><button class="top-icon mobile-matters">☰</button><button class="global-search">Search across matters, clients, documents…</button><div class="global-spacer"></div><span class="demo-tag">PUBLIC DEMO</span><button class="top-icon">RU</button><button class="top-icon">?</button></div>';
 }
 function caseHeader(m){
@@ -98,7 +98,7 @@ function evidence(){
 }
 function center(m){
  let body=tab==='overview'?overview(m):tab==='documents'?documents():tab==='timeline'?timeline():tab==='billing'?billing():evidence();
- return '<main class="case">'+top()+caseHeader(m)+'<div class="case-body">'+body+'</div></main>';
+ return '<main class="case">'+globalBar()+caseHeader(m)+'<div class="case-body">'+body+'</div></main>';
 }
 function rightbar(m){
  return '<aside class="rightbar">'+
